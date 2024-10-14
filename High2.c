@@ -4,7 +4,7 @@ void main()
 {
   int n,a;
   scanf("%d",&a);
-  n=pow(a,3);
+  n=cbrt(a);
   if(n*n*n==a){
   printf("perfect cube");
   }
