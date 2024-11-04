@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+int A,B,C;
+scanf("%d",A);
+printf("%d",B);
+B=A*1000;
+printf("%d",B);
+C=B*100;
+printf("%d",C);
+}
