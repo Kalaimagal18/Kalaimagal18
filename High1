@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+float a,b;
+scanf("%f",&a);
+printf("%.2f",a);
+double const pi=3.14;
+b=(a*a*(pi/2));
+printf("%.2lf\n",b);
+}
