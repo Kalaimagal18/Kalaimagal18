@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+int b,a,i;
+scanf("%d",&b);
+i=b*b;
+a=(3*i-2*b);
+printf("%d\n",a);
+}
