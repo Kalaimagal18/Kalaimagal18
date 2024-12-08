@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+   
+    char input;
+    
+    char *ptr = &input;
+    printf("Enter any character: ");
+    scanf("%c", ptr);  
+   
+    if (*ptr >= '0' && *ptr <= '9') {
+        printf("You entered a number\n");
+    }
+    else if (*ptr >= 'A' && *ptr <= 'Z')  {
+            printf("You entered an uppercase letter\n");
+        }
+    else if(*ptr >= 'a' && *ptr <= 'z') {
+          printf("You entered a lowercase letter\n");
+        } 
+    else {
+        printf("You entered a special character\n");
+        }
+
+    return 0;
+}
