@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int n1, n2;
+    printf("Enter two integer values: ");
+    scanf("%d %d", &n1, &n2); 
+
+    int *ptr1 = &n1;
+    int *ptr2 = &n2;
+    printf("Addition of %d and %d: %d\n", *ptr1, *ptr2, (*ptr1 + *ptr2));
+
+    printf("Difference of %d and %d: %d\n", *ptr1, *ptr2, (*ptr1 - *ptr2));
+
+    printf("Multiplication of %d and %d: %d\n", *ptr1, *ptr2, (*ptr1 * *ptr2));
+}
