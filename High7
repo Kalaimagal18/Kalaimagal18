@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+void main() {
     int n1, n2;
     printf("Enter two integer values: ");
     scanf("%d %d", &n1, &n2); 
