@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+struct Person {
+    char name[50];
+    int age;
+};
+
+struct Person createPerson() {
+    struct Person p;
+
+    printf("Enter name: ");
+    scanf("%s", p.name);
+    printf("Enter age: ");
+    scanf("%d", &p.age);
+
+    return p;
+}
+
+int main() {
+    struct Person person = createPerson();
+
+    printf("Name: %s\n", person.name);
+    printf("Age: %d\n", person.age);
+
+    return 0;
+}
