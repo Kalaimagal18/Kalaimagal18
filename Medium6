@@ -1,6 +1,4 @@
 #include<stdio.h>
-void main()
-{
 int SNN(int x)
 {
   if(x==0)
