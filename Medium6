@@ -1,3 +1,6 @@
+#include<stdio.h>
+void main()
+{
 int SNN(int x)
 {
   if(x==0)
@@ -10,4 +13,5 @@ int main()
    int n;
    scanf("%d",&n);
    int res = SNN(n);
+}
 }
