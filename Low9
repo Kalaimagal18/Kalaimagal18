@@ -1,0 +1,16 @@
+typedef struct rectangle {
+    float length;
+    float width;
+} Rectangle;
+int main() {
+    Rectangle rect;
+    float area;
+    printf("length: ");
+    scanf("%f", &rect.length);
+    printf("width: ");
+    scanf("%f", &rect.width);
+    area = rect.length * rect.width;
+    printf("Area of the rectangle: %.2f square units\n", area);
+    return 0;
+}
+
