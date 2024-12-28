@@ -1,0 +1,28 @@
+unsigned int generateResult(unsigned int n, unsigned int m)
+{
+    unsigned int result = 0, shift = 0;
+    while (n > 0 || m > 0) {
+        if (m > 0) {
+            result |= ((m & 1) << shift);
+            m >>= 1;
+            shift++;
+        }
+        if (n > 0) {
+            result |= ((n & 1) << shift);
+            n >>= 1;
+            shift++;
+        }
+    }
+    return result;
+}
+int main() {
+    unsigned int n, m;
+    printf("Enter first number (n): ");
+    scanf("%u", &n);
+    printf("Enter second number (m): ");
+    scanf("%u", &m);
+    unsigned int result = generateResult(n, m);
+    printf("Result: %u\n", result);
+    return 0;
+}
+
