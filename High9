@@ -1,0 +1,18 @@
+#include<stdio.h>
+unsigned int reverseBits(unsigned int n) {
+    unsigned int reversed = 0;
+    while (n != 0) {
+        reversed <<= 1;
+        reversed |= (n & 1);
+        n >>= 1;
+    }
+    return reversed;
+}
+int main() {
+    unsigned int n;
+    printf("Enter a non-negative integer: ");
+    scanf("%u", &n);
+    unsigned int reversed = reverseBits(n);
+    printf("Reversed number: %u\n", reversed);
+    return 0;
+}
