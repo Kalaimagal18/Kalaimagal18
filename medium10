@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+FILE *ptr;
+char arr[20],arr1[100];
+printf("filename: ");
+scanf("%s",arr);
+printf("Contents of the file:\n");
+ptr=fopen(arr,"r");
+while(fgets(arr,sizeof(arr),ptr)){
+printf("%s",arr);
+}
+fclose(ptr);
+return 0;
+}
